@@ -20,8 +20,8 @@
   margin: auto;
 }
 
-.App-link {
-  color: #09d3ac;
+.App-intro {
+  font-size: large;
 }
 
 /* new css for movie component */
@@ -67,6 +67,16 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
+}
+
+input[type="submit"] {
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  width: 80px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
