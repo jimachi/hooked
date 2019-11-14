@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Movie from "./components/Movie";
 import Search from "./components/Search";
 
-const MOVIE_API_URL = "";
+const MOVIE_API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=33d8c9d8";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -24,7 +24,7 @@ const App = () => {
     setLoading(true);
     setErrorMessage(null);
 
-    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=`)
+    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=33d8c9d8`)
       .then(response => response.json())
       .then(jsonResponse => {
         if (jsonResponse.Response === "true") {
