@@ -1,8 +1,8 @@
 import React, { useEffect, useReducer } from "react";
-import "./App.css";
-import Header from "./components/Header";
-import Movie from "./components/Movie";
-import Search from "./components/Search";
+import "../App.css";
+import Header from "./Header";
+import Movie from "./Movie";
+import Search from "./Search";
 
 const MOVIE_API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=33d8c9d8";
 
