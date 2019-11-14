@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     fetch(MOVIE_API_URL)
-      .then(response => response.json)
+      .then(response => response.json())
       .then(jsonResponse => {
         setMovies(jsonResponse.Search);
         setLoading(false);
@@ -27,7 +27,7 @@ const App = () => {
     fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=33d8c9d8`)
       .then(response => response.json())
       .then(jsonResponse => {
-        if (jsonResponse.Response === "true") {
+        if (jsonResponse.Response === "True") {
           setMovies(jsonResponse.Search);
           setLoading(false);
         } else {
