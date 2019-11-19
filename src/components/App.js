@@ -24,7 +24,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         loading: false,
-        errorMessage: action.payload
+        movies: action.payload
       };
     case "SEARCH_MOVIES_FAILURE":
       return {
